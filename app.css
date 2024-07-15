@@ -83,6 +83,9 @@ body, html {
   padding: 20px;
   border-radius: 0 0 10px 10px;
 }
+.share a {
+  display: flex;
+}
 .share-title {
   text-transform: uppercase;
   letter-spacing: 5px;
