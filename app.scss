@@ -20,16 +20,17 @@ body, html {
     overflow-x: hidden; 
 }
 
-.image {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-
 .article {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     background-color: white;
     width: 80%;
     margin: 0 auto;
     border-radius: 10px;
+    
+    &-image {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
 
     &-content {
         padding: 20px 20px 0;
@@ -116,6 +117,76 @@ body, html {
             width: 15px;
             height: 13px;
             filter: $filter-white;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body, html {
+        overflow-x: unset;
+    }
+
+    .article {
+        display: flex;
+        width: 750px;
+        position: relative;
+
+        &-image {
+            width: 280px;
+            height: auto;
+            border-radius: 10px 0 0 10px;
+        }
+
+        &-content {
+            padding: 25px 20px;
+        }
+
+        &-title {
+            width: 80%;
+            font-size: 20px;
+        }
+
+        &-description {
+            font-size: 14px;
+            width: 90%;
+            padding-bottom: 30px;
+        }
+    }
+
+    .author-share {
+        margin-left: 40%;
+        cursor: pointer;
+    }
+
+    .div-share {
+        position: absolute;
+    }
+    
+    .share {
+        position: absolute;
+        width: 250px;
+        background: #48556A;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        right: -4rem;
+        top: 8rem;
+
+        &:after {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 15px 15px 0;
+            border-color: #48556A transparent;
+            display: block;
+            width: 0;
+            z-index: 1;
+            bottom: -15px;
+            left: 110px;
+        }
+
+        &-arrow {
+            display: none;
         }
     }
 }
