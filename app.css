@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body, html {
+  background-color: #ECF2F8;
+  display: flex;
+  height: 100vh;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.article {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.article-content {
+  padding: 20px 20px 0;
+}
+.article-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #48556A;
+  padding-bottom: 20px;
+}
+.article-description {
+  color: #6E8098;
+  padding-bottom: 20px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.author-image {
+  width: 40px;
+  border-radius: 50%;
+}
+.author-name {
+  font-size: 14px;
+  color: #48556A;
+}
+.author-date {
+  font-size: 13px;
+  color: #9DAEC2;
+}
+.author-share {
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: #ECF2F8;
+  margin-left: 15%;
+}
+.author-share-icon {
+  width: 15px;
+  height: 13px;
+  color: #ffffff;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  background-color: #48556A;
+  color: #9DAEC2;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+.share-title {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 14px;
+}
+.share-arrow {
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: #6E8098;
+  margin-left: 15%;
+}
+.share-arrow-icon {
+  width: 15px;
+  height: 13px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(224deg) brightness(200%) contrast(102%);
+}/*# sourceMappingURL=app.css.map */
