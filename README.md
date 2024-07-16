@@ -16,6 +16,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ### Built with
 
+-   Figma design files
 -   Semantic HTML5 markup
 -   SCSS custom properties
 -   Flexbox
